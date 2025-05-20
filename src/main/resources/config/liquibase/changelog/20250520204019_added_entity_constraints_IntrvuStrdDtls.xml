@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity IntrvuStrdDtls.
+    -->
+    <changeSet id="20250520204019-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="standarditem_id"
+                                 baseTableName="intrvu_strd_dtls"
+                                 constraintName="fk_intrvu_strd_dtls__standarditem_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="standarditem"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="appointment_id"
+                                 baseTableName="intrvu_strd_dtls"
+                                 constraintName="fk_intrvu_strd_dtls__appointment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="appointment"
+                                 />
+    </changeSet>
+</databaseChangeLog>

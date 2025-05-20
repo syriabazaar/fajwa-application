@@ -1,0 +1,25 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204015"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "StandardParent",
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "standardType",
+      "relationshipName": "standardType",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,41 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204017"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "weightPercentage",
+      "fieldType": "Float"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Standarditem",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "standardCat",
+      "relationshipName": "standardCat",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "intrvuStrdDtls",
+      "otherEntityRelationshipName": "standarditem",
+      "relationshipName": "intrvuStrdDtls",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,159 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204013"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "fullname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gradeId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "gradeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "homePhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "assigmentId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "dateOfAssignment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "organizationId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "organization",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nationalIdentifier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentDepartmentId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "slmMilitaryFlag",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "militaryFirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "slmName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateOfHire",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateOfLastHire",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nationalityCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nationality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "personStartDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "originalDateOfHire",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "supervisorId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supervisorFullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentDepartmentName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sectionId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "sectionName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adjustedServiceDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "qualificationType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "qualificationSpecification",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Employee",
+  "pagination": "pagination",
+  "readOnly": true,
+  "relationships": [
+    {
+      "otherEntityName": "intrvuReqAttch",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "intrvuReqAttch",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

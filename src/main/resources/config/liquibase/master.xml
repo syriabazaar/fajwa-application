@@ -12,7 +12,29 @@
     <property name="timeType" value="time" dbms="oracle"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204013_added_entity_Employee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204014_added_entity_StandardType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204015_added_entity_StandardParent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204016_added_entity_StandardCat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204017_added_entity_Standarditem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204018_added_entity_StandardReqAttach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204019_added_entity_IntrvuStrdDtls.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204020_added_entity_IntrvuReqAttch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204021_added_entity_Nomination.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204022_added_entity_Appointment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204023_added_entity_JobVacant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204024_added_entity_JobDesc.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204025_added_entity_Department.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20250520204015_added_entity_constraints_StandardParent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204016_added_entity_constraints_StandardCat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204017_added_entity_constraints_Standarditem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204019_added_entity_constraints_IntrvuStrdDtls.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204020_added_entity_constraints_IntrvuReqAttch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204021_added_entity_constraints_Nomination.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204022_added_entity_constraints_Appointment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204023_added_entity_constraints_JobVacant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250520204024_added_entity_constraints_JobDesc.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

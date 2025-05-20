@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204019"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "standardOption",
+      "fieldType": "StandardOption",
+      "fieldValues": "Yes,No,NotStarted"
+    }
+  ],
+  "name": "IntrvuStrdDtls",
+  "relationships": [
+    {
+      "otherEntityName": "standarditem",
+      "otherEntityRelationshipName": "intrvuStrdDtls",
+      "relationshipName": "standarditem",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "appointment",
+      "otherEntityRelationshipName": "intrvuStrdDtls",
+      "relationshipName": "appointment",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

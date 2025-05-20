@@ -1,0 +1,125 @@
+entity Employee {
+ fullname String,
+ gradeId Long,
+ gradeName String,
+ homePhone String,
+ mobileNumber String,
+ assigmentId Long,
+ dateOfAssignment String,
+ jobName String,
+ address String,
+ organizationId Long,
+ organization String,
+ nationalIdentifier String,
+ uid String,
+ parentDepartmentId String,
+ slmMilitaryFlag Integer,
+ militaryFirstName String,
+ slmName String,
+ age Integer,
+ dateOfHire Instant,
+ dateOfLastHire Instant,
+ gender String,
+ jobId Long,
+ nationalityCode String,
+ nationality String,
+ personStartDate Instant,
+ originalDateOfHire  Instant,
+ supervisorId String,
+ supervisorFullName  String,
+ parentDepartmentName String,
+ sectionId  Long,
+ sectionName String,
+ adjustedServiceDate   Instant,
+ qualificationType String,
+ qualificationSpecification String,
+}
+entity StandardType{
+name String
+}
+entity StandardParent{
+name String
+}
+entity StandardCat{
+name String
+}
+entity Standarditem{
+name String,
+isActive Boolean,
+weightPercentage Float
+}
+entity StandardReqAttach{
+name String,
+attDesc String
+}
+ 
+entity IntrvuStrdDtls{
+standardOption StandardOption
+}
+entity IntrvuReqAttch{
+addDate Instant,
+attch Blob
+}
+entity Nomination{
+
+machPerc Float  
+}
+entity Appointment {
+appDateTime Instant,
+interveiewDate Instant
+}
+ 
+entity JobVacant{
+
+}
+entity JobDesc{
+jobName String
+}
+ 
+enum StandardOption{
+	Yes, No , NotStarted
+} 
+ 
+entity Department{
+		depName String
+ } 
+ relationship ManyToOne {
+StandardParent{standardType(name)} to StandardType
+StandardCat{standardParent(name)} to StandardParent
+Standarditem{standardCat(name)} to StandardCat
+StandardCat{reqAttachment(name)} to StandardReqAttach
+JobDesc to StandardType
+Nomination{employee(fullname)} to Employee
+Nomination  to JobVacant
+
+JobVacant{department(depName)} to Department
+JobVacant{jobDesc(jobName)} to JobDesc
+
+IntrvuReqAttch{standardReqAttach(name)} to StandardReqAttach
+IntrvuStrdDtls to Standarditem
+} 
+relationship OneToOne{
+Appointment to Nomination
+ }
+ relationship OneToMany{
+Appointment to IntrvuStrdDtls
+Employee to IntrvuReqAttch
+ }
+
+// defining multiple OneToMany relationships with comments
+ 
+
+ 
+// Set pagination options
+paginate Appointment , Nomination , Employee , Standarditem  with pagination
+filter Appointment, Nomination , Employee , StandardType , StandardReqAttach ,
+StandardParent , StandardCat , Standarditem
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+readOnly Employee , JobDesc
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+ 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
