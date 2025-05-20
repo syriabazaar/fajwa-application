@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204021"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "machPerc",
+      "fieldType": "Float"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Nomination",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "fullname",
+      "otherEntityName": "employee",
+      "relationshipName": "employee",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "jobVacant",
+      "otherEntityRelationshipName": "nomination",
+      "relationshipName": "jobVacant",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "appointment",
+      "otherEntityRelationshipName": "nomination",
+      "relationshipName": "appointment",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

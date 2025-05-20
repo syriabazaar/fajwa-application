@@ -1,0 +1,21 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204018"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "attDesc",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "StandardReqAttach",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

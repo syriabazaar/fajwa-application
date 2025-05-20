@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204023"
+  },
+  "applications": "*",
+  "fields": [],
+  "name": "JobVacant",
+  "relationships": [
+    {
+      "otherEntityField": "depName",
+      "otherEntityName": "department",
+      "relationshipName": "department",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "jobName",
+      "otherEntityName": "jobDesc",
+      "relationshipName": "jobDesc",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "nomination",
+      "otherEntityRelationshipName": "jobVacant",
+      "relationshipName": "nomination",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

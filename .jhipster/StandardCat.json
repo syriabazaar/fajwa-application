@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204016"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "StandardCat",
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "standardParent",
+      "relationshipName": "standardParent",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "standardReqAttach",
+      "relationshipName": "reqAttachment",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20250520204022"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "appDateTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "interveiewDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Appointment",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "nomination",
+      "otherEntityRelationshipName": "appointment",
+      "relationshipName": "nomination",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "intrvuStrdDtls",
+      "otherEntityRelationshipName": "appointment",
+      "relationshipName": "intrvuStrdDtls",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
